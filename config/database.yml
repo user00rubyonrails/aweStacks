@@ -15,6 +15,7 @@ test:
 
 production:
   <<: *default
-  database: awestacks_production
-  username: awestacks
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: ec2-54-235-86-226.compute-1.amazonaws.com
+  database: dbdbqdlmslt4km
+  username: uruksehodxnnic
+  password: 0cca8ce2eb26a5b60047ae1e2ad5f78f567d831f28ffd86f5150d596156830db
