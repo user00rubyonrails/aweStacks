@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: awestacks_development
+
+test:
+  <<: *default
+  database: awestacks_test
+
+production:
+  <<: *default
+  database: awestacks_production
+  username: awestacks
+  password: <%= ENV['DATABASE_PASSWORD'] %>
